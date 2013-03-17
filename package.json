@@ -1,0 +1,15 @@
+{
+    "name": "simpleCRUD",
+    "description": "CRUD in node.JS",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "redis": "latest",
+        "mongoose": "latest",
+        "jade": "latest",
+        "express": "latest"
+    },
+    "scripts" : {
+        "start" : "NODE_ENV=development nodemon server.js"
+    }
+}
