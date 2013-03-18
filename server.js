@@ -1,8 +1,8 @@
 var express = require("express"),
     app = express();
 
-var redis = require("redis"),
-    client = redis.createClient();
+// var redis = require("redis"),
+//     client = redis.createClient();
 
 // Configuration
 
@@ -29,3 +29,7 @@ app.configure('production', function(){
 });
 
 app.listen(3000);
+
+app.get('/', function(req, res){
+    res.render('home');
+});
